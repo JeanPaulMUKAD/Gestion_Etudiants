@@ -1,7 +1,7 @@
 <!--=====session_start=====-->
 <?php //session_start(); ?>
 <?php
-$db = new SQLite3('db.sqlite');
+$db = new SQLite3('/tmp/db.sqlite');;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nom = $_POST['nom'];
