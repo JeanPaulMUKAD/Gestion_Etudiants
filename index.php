@@ -1,7 +1,14 @@
 <!--=====session_start=====-->
 <?php //session_start(); ?>
 <?php
-$db = new SQLite3('/tmp/db.sqlite');;
+$db = new SQLite3('/tmp/db.sqlite');
+// Créer la table si elle n'existe pas
+$db->exec("CREATE TABLE IF NOT EXISTS etudiants (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nom TEXT NOT NULL,
+    promotion TEXT NOT NULL,
+    email TEXT NOT NULL
+);");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nom = $_POST['nom'];
