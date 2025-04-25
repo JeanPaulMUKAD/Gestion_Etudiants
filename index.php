@@ -1,5 +1,5 @@
 <!--=====session_start=====-->
-<?php session_start(); ?>
+<?php //session_start(); ?>
 <?php
 $db = new SQLite3('db.sqlite');
 

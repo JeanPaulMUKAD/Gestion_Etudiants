@@ -54,7 +54,7 @@ Pour exécuter ce projet sur votre machine locale, suivez les étapes suivantes 
   Si vous n'avez pas Apache ou un serveur local comme XAMPP/WAMP, vous pouvez utiliser le serveur interne de PHP :
   * php -S localhost:8000
   Accédez ensuite à votre formulaire via :
-  http://localhost:8080/index.php
+  https://gestion-etudiants-9p6g.onrender.com
 
 4. Ajout des étudiants
   Remplissez les champs du formulaire.
