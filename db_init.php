@@ -1,6 +1,6 @@
 <?php
     // db_init.php (à exécuter une seule fois pour créer la table)
-    $db = new SQLite3('db.sqlite');
+    $db = new SQLite3('/tmp/db.sqlite');
     $db->exec("CREATE TABLE IF NOT EXISTS etudiants (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         nom TEXT NOT NULL,
